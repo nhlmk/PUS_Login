@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="121.06">
+    <testcase classname="Login" name="User enters valid credentials" time="21.518">
+        <system-out>
+            <![CDATA[Given user is on the home page of application...............................passed
+When user clicks the signin link from the top right corner..................passed
+And user enters below "nihalimek@gmail.com" and "heqBuf-perdoc-1syfdy"......passed
+And user clicks Login button................................................passed
+Then user should see the dashboard page.....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User does not enter any credentials" time="17.156">
+        <system-out>
+            <![CDATA[Given user is on the home page of application...............................passed
+When user clicks the signin link from the top right corner..................passed
+And user enters below "" and "heqBuf-perdoc-1syfdy".........................passed
+And user clicks Login button................................................passed
+Then user should see the error message - This field is required.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User does not enter any credentials 2" time="17.048">
+        <system-out>
+            <![CDATA[Given user is on the home page of application...............................passed
+When user clicks the signin link from the top right corner..................passed
+And user enters below "nihalimek@gmail.com" and ""..........................passed
+And user clicks Login button................................................passed
+Then user should see the error message - This field is required.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User does not enter any credentials 3" time="15.194">
+        <system-out>
+            <![CDATA[Given user is on the home page of application...............................passed
+When user clicks the signin link from the top right corner..................passed
+And user enters below "" and "".............................................passed
+And user clicks Login button................................................passed
+Then user should see the error message - This field is required.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User enters invalid credentials" time="17.267">
+        <system-out>
+            <![CDATA[Given user is on the home page of application...............................passed
+When user clicks the signin link from the top right corner..................passed
+And user enters below "popupsmart@mail.com" and "heqBuf-perdoc-1syfdy"......passed
+And user clicks Login button................................................passed
+Then user should see the error message - Incorrect email or password........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User enters invalid credentials 2" time="16.057">
+        <system-out>
+            <![CDATA[Given user is on the home page of application...............................passed
+When user clicks the signin link from the top right corner..................passed
+And user enters below "nihalimek@gmail.com" and "popupsmart"................passed
+And user clicks Login button................................................passed
+Then user should see the error message - Incorrect email or password........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Login" name="User enters invalid credentials 3" time="16.253">
+        <system-out>
+            <![CDATA[Given user is on the home page of application...............................passed
+When user clicks the signin link from the top right corner..................passed
+And user enters below "popupsmart@mail.com" and "popupsmart"................passed
+And user clicks Login button................................................passed
+Then user should see the error message - Incorrect email or password........passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
